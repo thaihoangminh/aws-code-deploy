@@ -16,8 +16,13 @@ phases:
 # Include only the files required for your application to run.
 artifacts:
   files:
+    - dist/**/*
     - public/**/*
     - src/**/*
     - package.json
     - appspec.yml
     - scripts/**/*
+
+cache:
+  paths:
+    - node_modules/**/*
